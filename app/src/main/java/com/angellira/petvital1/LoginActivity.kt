@@ -27,6 +27,10 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.BotaoRegistrar.setOnClickListener{
+            startActivity(Intent(this, CadastroActivity::class.java))
+        }
+
         binding.button2esquecisenha.setOnClickListener {
             startActivity(Intent(this, EsqueciASenha::class.java))
         }
